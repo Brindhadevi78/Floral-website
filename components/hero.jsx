@@ -41,12 +41,16 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 items-start min-h-[600px]">
-          {/* Left - Text Content with Customer Review */}
+
+          {/* Left Section */}
           <div className="md:col-span-1 z-10 flex flex-col justify-start">
             <div className="flex items-center gap-2 mb-3">
               <Leaf className="w-8 h-8 text-emerald-400 animate-bounce" />
-              <h1 className="text-5xl md:text-5xl font-bold leading-tight">Earth&apos;s Exhale</h1>
+              <h1 className="text-white text-5xl md:text-5xl font-bold leading-tight">
+                Earth&apos;s Exhale
+              </h1>
             </div>
+
             <p className="text-gray-300 text-sm mb-6 leading-relaxed">
               Earth Exhale symbolizes the purity and vitality of the Earth&apos;s natural environment and its essential
               role in sustaining life.
@@ -61,12 +65,12 @@ export default function Hero() {
               </button>
             </div>
 
-            {/* Customer Review Card - Enhanced with gradient border */}
+            {/* Review Card */}
             <div className="card-border bg-slate-700/40 backdrop-blur p-4 w-fit hover:shadow-lg hover:shadow-emerald-500/20 transition-all duration-300">
               <div className="flex items-center gap-3 mb-3">
                 <img src="/images/image.png" alt="Customer" className="w-8 h-8 rounded-full border border-green-400" />
                 <div>
-                  <p className="font-semibold text-sm">Jimma Hamil</p>
+                  <p className="font-semibold text-sm text-white">Jimma Hamil</p>
                   <p className="text-xs text-yellow-400">⭐⭐⭐⭐⭐</p>
                 </div>
               </div>
@@ -88,7 +92,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Center - Featured Plant with Customer Avatars - Enhanced */}
+          {/* Center Image */}
           <div className="md:col-span-1 z-10 relative flex flex-col items-center">
             <div className="relative mb-6 w-full flex justify-center group">
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-green-400/20 rounded-full blur-3xl group-hover:blur-2xl transition-all duration-300 animate-pulse"></div>
@@ -113,7 +117,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right - Product Showcase Card - Enhanced with 3D effect */}
+          {/* Right Product Card */}
           <div className="md:col-span-1 z-10">
             <div
               className="card-border bg-slate-700/30 backdrop-blur p-8 rounded-2xl sticky top-32 hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300 transform hover:scale-105"
@@ -125,7 +129,11 @@ export default function Hero() {
                 <p className="text-gray-400 text-xs font-medium">Indoor Plant</p>
                 <Sparkles className="w-4 h-4 text-emerald-400 animate-pulse" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">Aglaonema plant</h3>
+
+              <h3 className="text-white text-2xl font-bold mb-2">
+                Aglaonema plant
+              </h3>
+
               <p className="text-gray-400 text-sm mb-6">
                 The Aglaonema plant is a genus of succulent plants known for their striking leaves and architectural
                 forms.
@@ -155,7 +163,6 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Indicator dots */}
               <div className="flex gap-2 justify-center">
                 <div className="w-2 h-2 rounded-full bg-green-400"></div>
                 <div className="w-2 h-2 rounded-full bg-gray-600"></div>
@@ -163,6 +170,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
