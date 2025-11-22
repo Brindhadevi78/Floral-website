@@ -27,7 +27,9 @@ export default function BenefitsSection() {
   return (
     <section className="py-20 px-4 bg-slate-900">
       <div className="max-w-7xl mx-auto">
-        <h2 className="section-title mb-16">Why Choose FloraVision</h2>
+        
+        {/* Section Title */}
+        <h2 className="section-title mb-16 text-white">Why Choose FloraVision</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, idx) => (
@@ -38,8 +40,12 @@ export default function BenefitsSection() {
               <div className="text-4xl mb-4 group-hover:scale-125 transition-transform duration-300">
                 {benefit.icon}
               </div>
-              <h3 className="text-lg font-bold mb-2">{benefit.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{benefit.description}</p>
+
+              {/* Title in white */}
+              <h3 className="text-lg font-bold mb-2 text-white">{benefit.title}</h3>
+
+              {/* Description in white */}
+              <p className="text-sm leading-relaxed text-white">{benefit.description}</p>
             </div>
           ))}
         </div>
